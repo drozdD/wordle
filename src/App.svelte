@@ -114,7 +114,7 @@
 <main class="h-auto flex flex-col items-center mt-10 text-[#213547]">
   <GameBoard {settings} {currentWord} {currentWords} {word} />
   <Keyboard {lettersToHighlight} />
-  <Win bind:openWinModal={openWinModal} bind:openLoseModal={openLoseModal} {selectRandomWord}/>
+  <Win bind:openWinModal={openWinModal} bind:openLoseModal={openLoseModal} {selectRandomWord} {word}/>
 </main>
 
 <svelte:window on:keydown={onKeyDown} />

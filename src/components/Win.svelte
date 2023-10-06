@@ -2,6 +2,7 @@
     export let openWinModal;
     export let selectRandomWord;
     export let openLoseModal;
+    export let word;
 
     function playAgain(){
         openWinModal=false
@@ -43,7 +44,9 @@
             <div class="head bg-gray-100 py-5 px-8 text-2xl font-extrabold text-center text-red-400">
                 YOU LOSE :c
             </div>
-            <div class="content p-8 flex flex-col items-center text-xl" />
+            <div class="content p-8 flex flex-col items-center text-xl" >
+                correct word - {word}
+            </div>
             <div class="absolute bottom-0 right-0 m-10">
                 <button
                     on:click={() => playAgain()}
